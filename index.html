@@ -1,0 +1,149 @@
+<html>
+  <head>
+      <meta charset="utf-8" name="Inicio Pizarras Magneticas" content="Informacion general, menu y calculadora.">
+      <title>Pizarras magneticas - Inicio</title>
+	  <style type='text/css'>
+		*{margin: 0%; padding: 0%;}
+		html{ font-size: 16px;}
+
+		@media (max-width: 1280px)
+		{ 
+			html{ font-size: 12px;}
+		}
+
+		@media (max-width: 800px)
+		{
+			html{ font-size: 10px;}
+		}
+		
+		@keyframes animacion1
+		{
+			from{background-image: url("titulo1.jpg");}
+			30%{background-image: url("titulo2.jpg");}
+			60%{background-image: url("titulo3.jpg");}
+			to{background-image: url("titulo4.jpg");}
+		}
+		
+		.animacionFotoPrincipal{animation-name: animacion1; animation-duration: 16s; animation-iteration-count: infinite; animation-direction: normal; animation-delay: 0s; animation-timing-function: linear;}
+		
+		ul{list-style-type: none;}
+		ul.Menu{list-style-type: none; text-align: center; font-size: 2em;}
+		ul.Menu li{display: inline-block; margin: 0% 1%; padding: 0% 1%;}
+		ul.Menu li ul.SubMenu{display: none; margin: auto auto;}
+		ul.Menu li:hover ul.SubMenu{display: block; position: absolute; font-size: 0.5em; width: 200%; line-height: 2em; background-color: black;}
+		ul.Menu li:hover ul.SubMenu li{display: block; padding: 0% 1%;}
+		ul.Menu li:hover ul.SubMenu li a{color: white; text-decoration: none;}
+		
+		div#popear:hover{transform: scale(1.5)}
+		div#popear div:hover{transform: scale(1.5)}		
+		
+		p#efectoSombra{text-shadow: none; transition: text-shadow 6s ease 0s, color 1s ease 0s}
+		p#efectoSombra:hover{color: blue; text-shadow: 0.4em 0.4em 10px rgb(205, 255, 233), 0.4em -0.4em 10px rgb(205, 255, 233), -0.4em 0.4em 10px rgb(205, 255, 233), -0.4em -0.4em 10px rgb(205, 255, 233)}
+	  </style>
+  </head>
+  <body style='padding: 0% 15%; color: black;'>
+	<div style='position: fixed; z-index: 10; width: 70%; background-color: white;'> <!-- Titulo mas menu -->
+  
+		<div style='text-align: center; background-color: white;'> <!-- Titulo. -->
+			<h1><span style='font-size: 2.6em; color: red;'>PIZARRA </span><span style='font-size: 2.6em; color: blue;'>MAGNETICA</span></h1>
+		</div>
+		<ul class='Menu'>
+			<li><a href='#' style='text-decoration: none; color: black;'>Inicio</a></li>
+			<li style='position: relative;'>Productos
+				<ul class='SubMenu'>
+					<li>
+						<a href='pizarraBlanca.html'>Pizarra blanca magnetica</a>
+					</li>
+					<hr style='color: white;'>
+					<li>
+						<a href='pizarraCorcho.html'>Pizarra de corcho</a>
+					</li>
+					<hr style='color: white;'>
+					<li>
+						<a href='pizarraDobleFaz.html'>Pizarra doble faz</a>
+					</li>
+					<hr style='color: white;'>
+					<li>
+						<a href='pizarraCombinada.html'>Pizarra combinada</a>
+					</li>
+					<hr style='color: white;'>
+					<li>
+						<a href='pizarraConTripode.html'>Pizarra magnetica blanca con tripode</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<!-- <div style='text-align: center; background-color: DarkGray;'> -->
+			<!-- <hr> -->
+			<!-- <a href='#' title='Ir a Inicio' style='text-decoration: none; color: black; font-size: 30px; padding-right: 2%;'>Inicio</a> -->
+			<!-- <a href='materiales.html' title='Ir a Materiales' style='text-decoration: none; color: black; font-size: 30px; padding-right: 2%;'>Materiales</a> -->
+			<!-- <a href='Promociones.html' title='Ir a Promociones' style='text-decoration: none; color: black; font-size: 30px;'>Promociones</a> -->
+			<!-- <hr> -->
+		<!-- </div> -->
+	</div>
+	
+	<div style='position: relative; top: 12em;'>
+		<div class='animacionFotoPrincipal' style='margin: auto auto; width: 736px; max-width: 100%; height: 400px; overflow: hidden; background-repeat: no-repeat; background-size: contain;'></div> <!-- Foto principal -->  <!-- style='height: 18em; background-image: url("principal.jpg"); background-size: contain;' -->		
+	<p style='margin-top: 5%; margin-bottom: 1%; font-size: 1.3em; font-family: signika,sans-serif;'>Categorias</p>
+	<hr>
+	<div id=popear style='font-family: signika,sans-serif; width: 23%; margin: 1% 2% 4% 0%; float: left;'> <!-- Contenedor pizarra magnetica. -->
+		<!-- <img style='position: relative; left: 1.3em;' src='pizarraMagnetica.jpg' style='max-width: 100%; max-height: 100%;'></img> -->
+		<p style='height: 13em; background-image: url(pizarraMagnetica.jpg); background-size: contain; background-repeat: no-repeat;'></p>
+		<div style='text-align: center; padding: 10% 7%; font-size: 1em; color: white; background-color: #A3432B;'>
+			<p id=efectoSombra style='padding-bottom: 5%;'>PIZARRAS BLANCA</p>
+			<hr>
+			<p style=' padding-top: 5%;'>
+				<a href='pizarraBlanca.html' style='color: black; text-decoration: none; text-align: center;'>VER MAS</a>
+			</p>
+		</div>
+	</div>
+	<div id=popear style='font-family: signika,sans-serif; width: 23%; margin: 1% 2% 4% 0%; float: left;'> <!-- Contenedor pizarra de corcho. -->
+		<!-- <img style='position: relative; left: 1.3em; max-width: 100%; max-height: 100%;' src='pizarraCorcho.jpg'></img> -->
+		<p style='height: 13em; background-image: url(pizarraCorcho.jpg); background-size: contain; background-repeat: no-repeat;'></p>
+		<div style='text-align: center; padding: 10% 7%; font-size: 1em; color: white; background-color: #A3432B;'>
+			<p id=efectoSombra style='padding-bottom: 5%;'>PIZARRAS DE CORCHO</p>
+			<hr>
+			<p style=' padding-top: 5%;'>
+				<a href='pizarraCorcho.html' style='color: black; text-decoration: none; text-align: center;'>VER MAS</a>
+			</p>
+		</div>
+	</div>
+	<div id=popear style='font-family: signika,sans-serif; width: 23%; margin: 1% 2% 4% 0%; float: left;'> <!-- Contenedor pizarra doble fax. -->
+		<!-- <img style='position: relative; left: 1.3em; max-width: 83%; max-height: 100%; height: 55%; padding-bottom: 5%; padding-top: 3%;' src='pizarraDobleFax.jpg'></img> -->
+		<p style='height: 13em; background-image: url(pizarraDobleFaz.jpg); background-size: contain; background-repeat: no-repeat; background-position: 0em 0.5em;'></p>
+		<div style='text-align: center; padding: 10% 7%; font-size: 1em; color: white; background-color: #A3432B;'>
+			<p id=efectoSombra style='padding-bottom: 5%;'>PIZARRAS DOBLE FAZ</p>
+			<hr>
+			<p style=' padding-top: 5%;'>
+				<a href='pizarraDobleFaz.html' style='color: black; text-decoration: none; text-align: center;'>VER MAS</a>
+			</p>
+		</div>
+	</div>
+	<div id=popear style='font-family: signika,sans-serif; width: 23%; margin: 1% 2% 4% 0%; float: left;'> <!-- Contenedor pizarra combinada. -->
+		<!-- <img style='position: relative; left: 1.3em; max-width: 100%; max-height: 100%;' src='pizarraCorcho.jpg'></img> -->
+		<p style='height: 13em; background-image: url(pizarraCombinada.jpg); background-size: contain; background-repeat: no-repeat; background-position: 0;'></p>
+		<div style='text-align: center; padding: 10% 7%; font-size: 1em; color: white; background-color: #A3432B;'>
+			<p id=efectoSombra style='padding-bottom: 5%;'>PIZARRAS COMBINADA</p>
+			<hr>
+			<p style=' padding-top: 5%;'>
+				<a href='pizarraCombinada.html' style='color: black; text-decoration: none; text-align: center;'>VER MAS</a>
+			</p>
+		</div>
+	</div>
+	<div id=popear style='font-family: signika,sans-serif; width: 23%; margin: 1% 2% 4% 0%; float: left;'> <!-- Contenedor pizarra tripode -->
+		<!-- <img style='position: relative; left: 1.3em; max-width: 100%; max-height: 100%;' src='pizarraTripode.jpg'></img> -->
+		<p style='height: 13em; background-image: url(pizarraTripode.jpg); background-size: contain; background-repeat: no-repeat;'></p>
+		<div style='text-align: center; padding: 10% 7%; font-size: 1em; color: white; background-color: #A3432B;'>
+			<p id=efectoSombra style='padding-bottom: 5%;'>PIZARRAS CON TRIPODE</p>
+			<hr>
+			<p style=' padding-top: 5%;'>
+				<a href='pizarraConTripode.html' style='color: black; text-decoration: none; text-align: center;'>VER MAS</a>
+			</p>
+		</div>
+	</div>
+	</div>	
+	<div style='position: relative; top: 14em; clear: left; padding: 3% 20%;'> <!-- Footer -->
+		<div style='font-family: signika,sans-serif; font-size: 1em; color: rgb(42, 42, 214); text-align: center;'><a TARGET="_blank" href='https://www.facebook.com/JyH-Pizarras-325051051278683/' style='text-decoration: none;'>Seguinos</a> en Facebook</div>
+	</div>
+  </body>
+</html>
